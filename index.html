@@ -20,10 +20,13 @@
         <link rel="stylesheet" type="text/css" href="css/resume.css">
     <!--For multi browser css prefix support -->
         <script type="text/javascript" src="js/resumeScript.js"></script>  
+        
     </head>
     <body>
         <main>
             <header>
+                <!--<img class="flag-icon-fra">-->
+                
             	<section>
             		<aside>
                         <span>
@@ -44,8 +47,8 @@
                         <h2>Master of Science in Engineering</h2>
                         School of Science for Open and Environmental Systems, Keio University<br>
                         <div class="cards">
-                            <div class="cards__item"><img class="card__image" src="images/YagamiCampus.jpg" alt="Yagami campus"></div>
-                            <div class="cards__item"><img  class="card__image" src="images/HiyoshiCampus.jpg" alt="Hiyoshi campus" ></div>
+                            <div class="cards__item"><img class="card__image" loading="lazy" src="images/YagamiCampus.jpg" alt="Yagami campus"></div>
+                            <div class="cards__item"><img  class="card__image" loading="lazy" src="images/HiyoshiCampus.jpg" alt="Hiyoshi campus" ></div>
                           
                         </div> 
                         <br>    
@@ -59,6 +62,9 @@
                                 <li>
                                     <h3>Computer Visualization</h3>
                                     As weekly reports for a course on computer visualization, I produced a few quick visuals. I took half a day to use a Diffusion Limited Aggregation algorithm I wrote years ago and produced a few scenes that implemented some of the concepts we learned about in this course. <a href="https://sereza7.github.io/DLA-Visualisation-with-Unity/">See it here</a><br>Moreover, after learning the marching square algorithm, I decided to implement it myself and use it to draw out iso-levels produced by a diamond-square algorithm.
+                                    <div class="cards">
+                                    <div class="cards__item" style="flex-grow:0;width:450px;"><iframe class="card__video" src="https://www.youtube.com/embed/9VijKk8q_ZM"></iframe></div>
+                                    </div>
                                 </li>
                                 <li>
                                     <h3>Animation of a path finding algorithm</h3>
@@ -70,7 +76,7 @@
                                 </li>
                                 <li>
                                     <h3>Conundrum</h3>
-                                    I teamed up with a couple of other Keio students to dedvelop and publish an app making use of the many specific interactivity means available on Android. Conundrum, working name LAM, is a 3D puzzle game.
+                                    I teamed up with a couple of other Keio students to develop and publish an app making use of the many specific interactivity means available on Android. Conundrum, working name LAM, is a 3D puzzle game.
                                     In this project, I was the more experienced of our team with Unity and scripting in Csharp, so I handled most of the interface and scene navigation, while my teammates focused on the logic of interaction, collision and puzzle solving. I decided to spend some time on blender to learn the tool and create the 3D models used for the puzzles. This was also my first serious attempt at writing custom shaders in Unity.
                                     <a href="https://play.google.com/store/apps/details?id=com.LAM.Conundrum">See it here</a><br>
                                     <div class="cards">
@@ -86,10 +92,21 @@
                                     <h3>Visual Asset Creation</h3>
                                     Through various projects on my free time such as game jam submissions and 3D modelling, I learned to use the softwares Inkscape and Blender so that I could use them later on to complement my technical knowledge of User Interface design. 
                                     <div class="cards">
-                                    <div class="cards__item"><iframe class="card__image" src="https://youtube.com/embed/nAmjy1bHe3o"></iframe></div>
-                                    <div class="cards__item"><iframe class="card__image" src="https://youtube.com/embed/VqcbZ49bZGA"></iframe></div>
-                                   <div class="cards__item"> <iframe class="card__image" src="https://youtube.com/embed/TznlmPJhQNc"></iframe></div>
+                                    <div class="cards__item"><iframe class="card__image" loading="lazy" src="https://youtube.com/embed/nAmjy1bHe3o"></iframe></div>
+                                    <div class="cards__item"><iframe class="card__image" loading="lazy" src="https://youtube.com/embed/VqcbZ49bZGA"></iframe></div>
+                                   <div class="cards__item"> <iframe class="card__image" loading="lazy" src="https://youtube.com/embed/TznlmPJhQNc"></iframe></div>
                                         
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>Master Thesis: Mapping Online Communities of Twitch through computational linguistics</h3>
+                                    Between January of 2021 and January of 2022, I worked on my Master's thesis on the side of the classes I took at Keio. After January 2022, my last semester at Keio was dedicated to finishing the project and redacting my thesis. 
+                                    <br>    
+                                    Online communities of practice have become an important part of today’s social environment However the tools used to describe and compare them are still sparse and limited. In order to increase accessibility and discoverability of online communities of practice, I decided to study the relevance of computational linguistics when comparing communities. After building a dataset from communities found on the video streaming platform Twitch, I processed it and extracted information from this dataset using standard natural language processing tools. This way, the study ended in a network of 815 communities organised by linguistic similarity, and an unfruitful attempt at interpreting principal components as coordinates of communities on a map. After validation, the relevancy of the node diagram has been confirmed, confirming that computational linguistics can help in mapping online communities. After final consideration, it seems that computational linguistics on community vocabulary could be used to help moderate platforms and switch focus from individuals to whole communities.
+                                    <div class="cards" style="">
+                                         <div class="cards__item" style="flex-grow: 0.2;"><img class="card__image" loading="lazy" src="images/MTcollection.png"  alt="Google Cloud data processing pipe" style="object-position: center bottom;"></div>
+                                         <div class="cards__item"><img  class="card__image" loading="lazy" src="images/MTmap.png"  alt="map of online communities" style="object-position: center bottom;"></div>
+                                        <div class="cards__item"><img  class="card__image" loading="lazy" src="images/MTnodes.png" alt="node graph of online communities" style="object-position: center bottom;"></div>
                                     </div>
                                 </li>
                             </ul>
@@ -107,8 +124,8 @@
                        <h2>Internship at Andyamo</h2>
                         Andyamo is a French start-up based in Grenoble which aims at providing solutions to better the urban mobility of disabled people.
                         <div class="cards">
-                            <div class="cards__item"><img class="card__image" src="images/Andyamo1.png" alt="map visualization with KeplerGL"></div>
-                            <div class="cards__item"><img  class="card__image" src="images/Andyamo2.png" alt="QGIS raster editing" ></div>
+                            <div class="cards__item"><img class="card__image" loading="lazy" src="images/Andyamo1.png" alt="map visualization with KeplerGL"></div>
+                            <div class="cards__item"><img  class="card__image" loading="lazy" src="images/Andyamo2.png" alt="QGIS raster editing" ></div>
                           
                         </div> 
                         <br>    
@@ -120,7 +137,7 @@
                                     <h3>Creation of a dataset for image recognition based on deep learning</h3>
                                     Using tools as QGIS and python3 for image manipulation, I built a dataset of about 20 000 samples for crosswalk recognition. I used geospatial data, and after forking a QGIS plugin to update it, was able to retrieve the images and store them as proper input/output tables for deep learning with Tensorflow in a CSV file.
                                     <div class="cards">
-                                        <div class="cards__item"><img class="card__image" src="images/PositiveSquares.png" alt="map visualization with KeplerGL"></div>
+                                        <div class="cards__item"><img class="card__image" loading="lazy" src="images/PositiveSquares.png" alt="map visualization with KeplerGL"></div>
                                     </div> 
                                     
                                 </li>
@@ -128,7 +145,7 @@
                                     <h3>Image Recognition with Darknet-Yolo</h3>
                                     After trying to apply simple all-purpose machine learning models to the dataset and witnessing a very low performance, following the advice of my internship supervisor, I used the Darknet-Yolo library. At the end of my internship I had time to create a simple utility to add the extra labels Yolo needed to run properly (bounding box of objects).
                                     <div class="cards">
-                                        <div class="cards__item" style="flex-grow:0;"><img class="card__image" src="images/labelHCI_full.png" alt="Bounding Box tagging for Yolo"></div>
+                                        <div class="cards__item" style="flex-grow:0;"><img class="card__image" loading="lazy" src="images/labelHCI_full.png" alt="Bounding Box tagging for Yolo"></div>
                                     </div> 
                                 </li>
                                 <li>
@@ -143,8 +160,8 @@
                         <h2>Engineering Degree</h2>
                         IMT Atlantique, major in Human-Machine Interaction and collaborative systems 
                         <div class="cards">
-                            <div class="cards__item"><img class="card__image" src="images/IMTA.jpg" alt="Entrance of the IMT Atlantique Brest campus"></div>
-                            <div class="cards__item"><img  class="card__image" src="images/terremer1.png" alt="The coastline near Brest, slightly angled" ></div>
+                            <div class="cards__item"><img class="card__image" loading="lazy" src="images/IMTA.jpg" alt="Entrance of the IMT Atlantique Brest campus"></div>
+                            <div class="cards__item"><img  class="card__image" loading="lazy" src="images/terremer1.png" alt="The coastline near Brest, slightly angled" ></div>
                           
                         </div> 
                         <br>    
@@ -159,9 +176,9 @@
                                     <h3>Co-responsible of a student newspaper:</h3>
                                     For nearly the whole two years, I assured with friends and colleagues the weekly publication of our student newspaper. I learned some basic formatting with Adobe Indesign, how to organize work with a team of 10 students with different skills and motivations, and how to deal with common media questions, like censorship or quality of information. I left the newspaper circle at the end of its 33rd year and it's still running today.
                                     <div class="cards">
-                                        <div class="cards__item"><img class="card__image" src="images/CdVFront.jpg" alt="Covers of a few newspaper"></div>
-                                        <div class="cards__item"><img  class="card__image" src="images/CdVTeam.jpg" alt="A gathering of the main members of the CdV team on a few years" ></div>
-                                        <div class="cards__item"><img  class="card__image" src="images/CdVCurrent.jpg" alt="Newspaper on a table" ></div>
+                                        <div class="cards__item"><img class="card__image" loading="lazy" src="images/CdVFront.jpg" alt="Covers of a few newspaper"></div>
+                                        <div class="cards__item"><img  class="card__image" loading="lazy" src="images/CdVTeam.jpg" alt="A gathering of the main members of the CdV team on a few years" ></div>
+                                        <div class="cards__item"><img  class="card__image" loading="lazy" src="images/CdVCurrent.jpg" alt="Newspaper on a table" ></div>
                                     </div> 
                                 </li>
                                 <li>
@@ -173,8 +190,8 @@
                                     <h3>Ocean Hackathon</h3>
                                     In October 2018 I joined a team to create the proof of concept for a GPS tracking device adapted to the very strict rules and recquirements of lightweight sailship races. I handled the software part, and created a PoC for the companion app of this tracker.
                                     <div class="cards">
-                                        <div class="cards__item"><img class="card__image" src="images/EtnasTeam.jpg" alt="Team for the ocean hackathon"></div>
-                                        <div class="cards__item"><img  class="card__image" src="images/EtnasPoC.png" alt="application PoC" ></div>
+                                        <div class="cards__item"><img class="card__image" loading="lazy" src="images/EtnasTeam.jpg" alt="Team for the ocean hackathon"></div>
+                                        <div class="cards__item"><img  class="card__image" loading="lazy" src="images/EtnasPoC.png" alt="application PoC" ></div>
                                     </div> 
                                     
                                 </li>
@@ -182,16 +199,16 @@
                                     <h3>Communication staff for a student council team</h3>
                                     In January 2019 I made sure students knew our team, our actions and our goals, by sharing regularly about it on social media. I created most of the visuals used by my team throughout the week of events leading up to the student council election day, and made sure to fulfill the visibility requirements my teammates negotiated with sponsors.
                                     <div class="cards">
-                                        <div class="cards__item"style="flex-grow:0;"><img class="card__image" src="images/acciocrepes.png" alt="Placard created for the event."></div>
-                                        <div class="cards__item"style="flex-grow:0;"><img  class="card__image" src="images/Ker934.png" alt="Student council extended team" ></div>
+                                        <div class="cards__item"style="flex-grow:0;"><img class="card__image" loading="lazy" src="images/acciocrepes.png" alt="Placard created for the event."></div>
+                                        <div class="cards__item"style="flex-grow:0;"><img  class="card__image" loading="lazy" src="images/Ker934.png" alt="Student council extended team" ></div>
                                     </div> 
                                 </li>
                                 <li>
                                     <h3>Short operational internship at Thales</h3>
                                     For a month in February 2019, I joined this multinational in their office in Brest. I helped them out with the reparation of a super high frequency antenna. In this internship I got a grasp of what working as an engineer in a multinational corporation looks like.
                                     <div class="cards">
-                                        <div class="cards__item"><img class="card__image" src="images/thalesBrest.jpg" alt="Front of the Thales buildings in Brest."></div>
-                                        <div class="cards__item"><img  class="card__image" src="images/SHFAntennaBoat.jpg" alt="SHF Antenna on a boat" ></div>
+                                        <div class="cards__item"><img class="card__image" loading="lazy" src="images/thalesBrest.jpg" alt="Front of the Thales buildings in Brest."></div>
+                                        <div class="cards__item"><img  class="card__image" loading="lazy" src="images/SHFAntennaBoat.jpg" alt="SHF Antenna on a boat" ></div>
                                     </div> 
                                 </li>
                                 <li>
@@ -201,8 +218,8 @@
                                     We receivedd the prize for the best start-up idea, out of five teams in this category.
                                     <a href="https://www.imt.fr/challenge-imt-disrupt-campus-2019-bravo-aux-3-equipes-recompensees-et-aux-60-etudiants-participants/">Read more (FR)</a>
                                     <div class="cards">
-                                        <div class="cards__item"><img class="card__image" src="images/ChallengeIMTTEam.jpg" alt="Team for the Challenge IMT"></div>
-                                        <div class="cards__item"><iframe class="card__image" src="https://www.youtube.com/embed/33Bcu3cRIbI"></iframe></div>
+                                        <div class="cards__item"><img class="card__image" loading="lazy" src="images/ChallengeIMTTEam.jpg" alt="Team for the Challenge IMT"></div>
+                                        <div class="cards__item"><iframe class="card__image" loading="lazy" src="https://www.youtube.com/embed/33Bcu3cRIbI"></iframe></div>
                                     </div> 
                                 </li>
                                 <li>
@@ -210,8 +227,8 @@
                                     In the context of a course, I had to fulfill a real-life request from Alcatel Lucent Enterprise (ALE) in a team of six students. Our request was to make a chatbot that could help with tracking assets in an hospital. After meeting our client and setting up proper specifications, we developped a couple of Nodered packages to connect ALE's tools one to each other and to a dialogflow bot.
                                     <a href="https://github.com/gsanyas/omni_access_stellar_asset_tracking_chatbot">See it here</a><br>
                                     <div class="cards">
-                                        <div class="cards__item"><img class="card__image" src="images/ChatbotALE.jpg" alt="Team for the Chatbot development and client"></div>
-                                        <div class="cards__item"><img class="card__image" src="images/ChatbotArchitecture.PNG" alt="Architecture of the chatbot"></div>
+                                        <div class="cards__item"><img class="card__image" loading="lazy" src="images/ChatbotALE.jpg" alt="Team for the Chatbot development and client"></div>
+                                        <div class="cards__item"><img class="card__image" loading="lazy" src="images/ChatbotArchitecture.PNG" alt="Architecture of the chatbot"></div>
                                     </div>
                                     
                                 </li>
@@ -234,8 +251,8 @@
                         <h2>Preparatory class</h2>
                         Lycée St. Louis, formation in physics and chemistry  
                         <div class="cards">
-                            <div class="cards__item"><img class="card__image" src="images/saintLouis.jpg" alt="Facade of the Saint Louis lycée"></div>
-                            <div class="cards__item"><img  class="card__image" src="images/DLA.jpg" alt="Diffusion limited aggregation pattern obtained by electrolysis" ></div>
+                            <div class="cards__item"><img class="card__image" loading="lazy" src="images/saintLouis.jpg" alt="Facade of the Saint Louis lycée"></div>
+                            <div class="cards__item"><img  class="card__image" loading="lazy" src="images/DLA.jpg" alt="Diffusion limited aggregation pattern obtained by electrolysis" ></div>
                           
                         </div> 
                         <br>    
@@ -245,10 +262,10 @@
                             In the first year, in the PCSI (Physics, Chemistry and Ingeneering Science) branch, I learned how to learn, and settled solid fundations for the second year. I chose to join the chemistry specialization for my second year, as this would have a limited impact on my integration chances, and this would surely be a one in a lifetime occasion to study advanced chemistry for me. uring my second year, I completed a small research project about DLA (diffusion limited aggregation), a subject that mixed chemistry and computer science, a domain I knew I wanted to make a career out of already.
                             After crunch studying for one month, I took the entry tests for multiple groups of French engineering schools. All this hard work paid off in the end and I scored unexpectedly high in the written tests, allowing me to join IMT Atlantique. 
                             <div class="cards">
-                                <div class="cards__item"><img class="card__image" src="images/DLA1.PNG" alt="Chemistry lab setup for DLA"></div>
-                                <div class="cards__item"><img class="card__image" src="images/DLA2.PNG" alt="Diagram of the setup"></div>
-                                <div class="cards__item"><img class="card__image" src="images/DLA3.PNG" alt="Different results from a top/down view."></div>
-                                <div class="cards__item"><img class="card__image" src="images/DLA4.PNG" alt="Tkinter modelisation of this phenomenon."></div>
+                                <div class="cards__item"><img class="card__image" loading="lazy" src="images/DLA1.PNG" alt="Chemistry lab setup for DLA"></div>
+                                <div class="cards__item"><img class="card__image" loading="lazy" src="images/DLA2.PNG" alt="Diagram of the setup"></div>
+                                <div class="cards__item"><img class="card__image" loading="lazy" src="images/DLA3.PNG" alt="Different results from a top/down view."></div>
+                                <div class="cards__item"><img class="card__image" loading="lazy" src="images/DLA4.PNG" alt="Tkinter modelisation of this phenomenon."></div>
                             </div>
                         </div>
                     </li>
