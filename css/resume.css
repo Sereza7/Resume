@@ -43,6 +43,10 @@ main {
     font-size: 1rem;
 }
 
+a {
+    color: var(--main-text-color);
+}
+
 .timeline-container {
     padding-left: var(--timeline-padding);
 }
@@ -55,14 +59,16 @@ main {
 h2 {
     font-size: 1.5em;
 }
+h3 {
+    font-size: 1.2em;
+}
 .timeline-container > li > .timespan {
     position:relative;
 }
 .timeline-container > li > .timespan::before {
     content: '';
     position: absolute;
-    left: calc(var(--timeline-padding) * -1);
-    transform: translate(-55%, -30%);
+    left: calc(var(--timeline-padding) * -1 - 1em - 0.1em);
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -71,4 +77,56 @@ h2 {
     border-color: var(--timeline-color);
     background-color: var(--background-color);
     justify-self: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: nowrap ;
+    margin-left: 0.05em;
+    margin-right: 0.05em    ;
+
+    margin-top: 0.5em;
+}
+
+.cards__item {
+    /* There will be 2 cards per row */
+    flex-basis: auto;
+    flex-grow: 1;
+    height: 300px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+.card__image{
+    width : 100% ;
+    height:100% ;
+    border-radius: 20px;
+    overflow:auto;
+    object-fit: cover;
+    object-position: center center;
+}
+.card__video {
+    width : 100% ;
+    height:100% ;
+    border-radius: 20px;
+    object-fit: fill;
+    object-position: top;
+}
+
+.collapsible-content {
+    display: none;
+}
+.collapsible-content.opened {
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.5em;
 }

@@ -3,18 +3,13 @@ window.addEventListener('load', event => {
 });
 function onLoad(){
     //Update all of the displayBoxes
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    var toggles = document.getElementsByClassName("details-toggler");
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
+    for (var index = 0; index < toggles.length; index++) {
+        toggles[index].addEventListener("click", function() {
+        let toggeablePan = document.getElementById(this.getAttribute('aria-controls'));
+        toggeablePan.classList.toggle("opened");
+        toggeablePan.ariaExpanded= toggeablePan.ariaExpanded === 'false';
       });
     }
     

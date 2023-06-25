@@ -6,20 +6,10 @@
     <!--Web crawler settings(IMPORTANT) -->
         <meta name="author" content="Lucas Charpentier" />
         <meta name="description" content="Resume" />
-    <!--Mobile device viewport setting-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--Twitter card setting https://dev.twitter.com/docs/cards/types/summary-card
-        <meta name="twitter:card" content="">
-        <meta name="twitter:site" content="">
-        <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="">
-        <meta name="twitter:url" content=""> -->
-    
-    <!--Global CSS style-->
+        <meta charset="UTF-8">
+
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/resume.css">
-    <!--For multi browser css prefix support -->
+        <link rel="stylesheet" type="text/css" href="css/resume.css">s
         <script type="text/javascript" src="js/resumeScript.js"></script>  
         
     </head>
@@ -34,8 +24,8 @@
         </header>
         <main>
             <ul class="timeline-container">
-                <li>
-                    After 4 years in the french higher education and 2 years in the japanese one, I am now open for opportunities on the labor market. I think my core skills would be best used on front-end development. I am particularly interested in working on projects related to knowledge representation and expression through digital means. I think we are living an important evolution of human language and I want to be a part of it.
+                <li class="current-context">
+                    After 4 years in the French higher education and 2 years in the japanese one, I am now open for opportunities on the labor market. I think my core skills would be best used on front-end development. I am particularly interested in working on projects related to knowledge representation and expression through digital means. I think we are living an important evolution of human language and I want to be a part of it.
                 </li>
                 <li class="clearfix">
                     <span class="timespan">Jul 2022 Sep 2020</span>
@@ -47,8 +37,8 @@
 
                     </div>
                     <br>
-                    <button type="button" class="collapsible">More details</button>
-                    <div class="content">
+                    <button type="button" class="details-toggler" aria-controls="keio_details_pan">Expand details about my experience at Keio University</button>
+                    <div id="keio_details_pan" class="collapsible-content" aria-expanded="false">
                         In September 2020, I started my formation at Keio University. Thanks to a double degree agreement between Keio U. and IMT Atlantique, I was able to study two years in both institution and get a degree from both. However, because of the pandemic, I had to take courses online in France for a month, and in October 2020 I got the chance to move next to Keio University. Even though I was only able to take online courses until September 2021, I was able to immerse myself in the Japanese culture and learn to get by in a country which language I started learning right before moving in. I joined the Saito Lab for my master thesis project, and studied natural language processing applied to online community classification.
                         <br>
                         On a more personal note, these two years abroad were an enrichening experience. Being able to hold a conversation with my limited knowledge of the Japanese language made me realize how much we can convey with the right words in a simple sentence. As my friends and colleagues were of international origin, I also got to use english as my main language for most of the two years, and even though not perfect, I believe I am close to bilingual. This trip broadened my horizon, and immersing myself in the asian culture made me realize how much European countries had in common.
@@ -124,8 +114,8 @@
 
                     </div>
                     <br>
-                    <button type="button" class="collapsible">More details</button>
-                    <div class="content">
+                    <button type="button" class="details-toggler" aria-controls="andyamo_details_pan">Expand details about my experience at Andyamo</button>
+                    <div id="andyamo_details_pan" class="collapsible-content" aria-expanded="false">
                         In this two month teleworking internship at Andyamo, I helped the technical team on a few tasks regarding geographical data. As the context was complicated and the duration of the internship short, I made sure to supply my work with in depth and organized documentation, and well made jupyter notebook files.
                         <ul>
                             <li>
@@ -160,8 +150,8 @@
 
                     </div>
                     <br>
-                    <button type="button" class="collapsible">More details</button>
-                    <div class="content">
+                    <button type="button" class="details-toggler" aria-controls="imta_details_pan">Expand details about my experience at IMT Atlantique</button>
+                    <div id="imta_details_pan" class="collapsible-content" aria-expanded="false">
                         IMT Atlantique is a relatively new engineering school, and in 2018 I became part of the first batch of students wwho would graduate from IMT Atlantique. I joined the campus on Brest, which held all the departments specialized in computer science and electronics. Even though studying was less intensive than earlier in Saint Louis, I learned a lot more about ingineering subjects, management and business. However, thanks to the support of the school and dedicated space on campus, I also was able to participate in a diverse and active social environment. The campus was a bit far from any active part of town, however the many student circles made it a mostly self-sufficient microcosm.
                         In my second year, I chose the Human-Machine Interaction and collaborative systems major. I learned a lot about VR / AR technologies, user experience and frontend development, as well as web 3.0 paradigms, ergonomy and organizational studies.
                         At the end of my formation, as the pandemic was starting, I took multiple MOOCs recommended and/or provided by the IMT Atlantique teaching team. I decided to take this opportunity to expand my computer science knowledge to more technical domains, to get a clear understanding of machine learning, and some basics about cybersecurity and cryptography.
@@ -251,8 +241,8 @@
 
                     </div>
                     <br>
-                    <button type="button" class="collapsible">More details</button>
-                    <div class="content">
+                    <button type="button" class="details-toggler" aria-controls="stlouis_details_pan">Expand details about my experience at St. Louis</button>
+                    <div id="stlouis_details_pan" class="collapsible-content" aria-expanded="false">
                         After earning my scientific baccalauréat and leaving high school, I joined the preparatory class St. Louis, in the middle of Paris. Through two years of hard studies, I gathered knowledge in fundamental sciences.
                         In the first year, in the PCSI (Physics, Chemistry and Ingeneering Science) branch, I learned how to learn, and settled solid fundations for the second year. I chose to join the chemistry specialization for my second year, as this would have a limited impact on my integration chances, and this would surely be a one in a lifetime occasion to study advanced chemistry for me. uring my second year, I completed a small research project about DLA (diffusion limited aggregation), a subject that mixed chemistry and computer science, a domain I knew I wanted to make a career out of already.
                         After crunch studying for one month, I took the entry tests for multiple groups of French engineering schools. All this hard work paid off in the end and I scored unexpectedly high in the written tests, allowing me to join IMT Atlantique.
@@ -264,10 +254,8 @@
                         </div>
                     </div>
                 </li>
-
-                <li><!-- Intentionally left blank for timeline positioning --></li>
             </ul>
-            <footer> <a href="https://github.com/Sereza7">Github</a> | <a href="https://www.linkedin.com/in/lucas-charpentier/">Linkedin</a>
+            <footer> <a href="https://github.com/Sereza7">Github</a>  |  <a href="https://www.linkedin.com/in/lucas-charpentier/">Linkedin</a>
             </footer>
         </main>
     </body>
