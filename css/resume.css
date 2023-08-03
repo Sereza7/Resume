@@ -1,18 +1,19 @@
 /* CSS Variables */
 * {
-    --sky-lightest: #5DDAEC;
-    --sky-light: #28B9CE;
+    --sky-lightest: #80EFFF;
+    --sky-light: #27B7CD;
     --sky: #039DB2;
-    --sky-dark: #02606D;
-    --sky-darkest: #001E22;
+    --sky-dark: #006F80;
+    --sky-darkest: #00434D;
 
-    --purple-lightest: #956BEF;
-    --purple-light: #6A38D7;
+    --purple-lightest: #A57BFF;
+    --purple-light: #7C44F3;
     --purple: #4810C0;
-    --purple-dark: #2E0C79;
-    --purple-darkest: #0E0226;
+    --purple-dark: #2D0680;
+    --purple-darkest: #18004D;
 
     --header-color: var(--purple-lightest);
+    --blending-header-height: 20vh;
     --main-text-color: white;
     --header-muted-color: var(--purple-lightest);
     --background-color: var(--purple-dark);
@@ -23,10 +24,12 @@
 header {
     background-image: url('../images/banniereimg.png')  ;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
-    gap: 5vw;
+    gap: 1rem;
     position: relative;
+    padding-bottom: var(--blending-header-height);
+    margin-bottom: calc(-1 * var(--blending-header-height));
 }
 header > .header-content {
     display: flex;
@@ -34,8 +37,6 @@ header > .header-content {
     font-size: 1.2rem;
 }
 header .avatar {
-    position: absolute;
-    bottom: 0;
     border-radius: 999px;
     border-color: var(--header-color);
     border-style: solid;
@@ -64,8 +65,24 @@ a {
 }
 
 .timeline-container {
+    position: relative;
     padding-left: calc(var(--timeline-padding) - var(--line-width)/2);
+    z-index: 2;
 }
+
+.blendingheader {
+    width:100%;
+    height: var(--blending-header-height);
+    background-color: var(--purple-dark);
+    mask-mode: alpha;
+    mask-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+}
+
+.timeline-container:first-child {
+    height: var(--blending-header-height);
+}
+
 .timeline-container > li {
     padding-left: calc(var(--timeline-padding));
     border-left: solid var(--timeline-color) var(--line-width);
